@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Student Management
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container" id="home">
+
+        <h1>Student Management System</h1>
+
+        <!-- Message Boxes -->
+        <section class="messages">
+
+            <div id="successMessage" class="message success" hidden>
+                <strong>Success!</strong>
+                Username and password entered successfully.
+            </div>
+
+            <div id="warningMessage" class="message warning" hidden>
+                <strong>Warning!</strong>
+                Please enter both username and password.
+            </div>
+
+            <div id="errorMessage" class="message error" hidden>
+                <strong>Error!</strong>
+                Username and password cannot both be empty.
+            </div>
+
+        </section>
+
+        <!-- Login Section -->
+        <section class="login-section" id="login">
+
+            <h2>Login</h2>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+        </section>
+
+        <!-- Student Marks Table -->
+        <section class="table-section" id="students">
+
+            <h2>Student Marks</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Kamal</td>
+                        <td>Programming</td>
+                        <td>85</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nimal</td>
+                        <td>Database</td>
+                        <td>78</td>
+                    </tr>
+
+                    <tr>
+                        <td>Amali</td>
+                        <td>Networking</td>
+                        <td>92</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saman</td>
+                        <td>Programming</td>
+                        <td>67</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kavindi</td>
+                        <td>Database</td>
+                        <td>88</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
+
